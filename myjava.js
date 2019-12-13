@@ -68,8 +68,7 @@ jQuery(document).ready(function($) {
 
 // Selector
 
-$( "#select" ).click(function() {
-    var container = document.getElementById('.content-box-1');
-    var scrollTo = document.getElementById('.content-box-2');
-    container.scrollTop = scrollTo.offsetTop;
+$('select').on('change', function(){
+    $('body,html').animate({ scrollTop: $('#' + $(this).val()).position().top });
+
 });
