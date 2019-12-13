@@ -30,17 +30,16 @@
 }
 
 html {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* clock & date  */
 .clock {
-  position: absolute;
-  top: 5vh;
-  left: 5vw;
-  transform: translateX(-50%) translateY(-50%);
-  color: #e1e1e1;
-  font-family: "IBM-PS2-thin", serif;
+  position: fixed;
+  top: 1vh;
+  right: 1vw;
+  color: black;
+  font-family: sans-serif;
   font-size: 15px;
   letter-spacing: 1px;
   cursor: none;
@@ -48,128 +47,336 @@ html {
 }
 
 #date {
-  position: absolute;
-  top: 5vh;
-  left: 5vw;
-  transform: translateX(-50%) translateY(-50%);
-  color: #e1e1e1;
-  font-family: "IBM-PS2-thin", serif;
+  position: fixed;
+  top: 1vh;
+  right: 1vw;
+  color: black;
+  font-family: sans-serif;
   font-size: 15px;
   letter-spacing: 1px;
   cursor: none;
   z-index: 9;
 }
 
+.bar {
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  z-index: 8;
+  font-size: 17px;
+  box-shadow: 0px 0px 60px 5px #e4dddd;
+}
+
+#hi {
+  position: fixed;
+  top: -12px;
+  left: 15px;
+  font-size: 25px;
+  z-index: 9;
+  cursor: none;
+}
+
+#hi:hover {
+  animation: 1s wiggle;
+}
+
+#index {
+  position: fixed;
+  top: 5px;
+  right: 51vw;
+  left: 51vw;
+  font-size: 16px;
+  font-family: sans-serif;
+  z-index: 9;
+}
+
+#emoji-time {
+  position: absolute;
+  top: -12px;
+  right: 107px;
+  font-size: 16px;
+  font-family: sans-serif;
+  z-index: 9;
+}
+
 /* background */
 body {
-  background-color: black;
+  background-color: white;
+  overflow: hidden;
 }
 
 /* Elisa slaton is a */
 .about {
   display: block;
-  position: absolute;
-  top: 60vh;
-  left: 15vw;
-  color: #e1e1e1;
-  font-size: 20px;
-  font-family: "Happy-Times-reg", serif;
-  line-height: 1;
+  position: relative;
+  text-align: left;
+  text-justify: inter-word;
+  hyphens: auto;
+  top: 2em;
+  left: 2vw;
+  color: black;
+  font-size: 21px;
+  font-family: sans-serif;
+  line-height: 1.1;
   z-index: 2;
-  animation: fadein 2s;
+  animation: fadein 3s;
   float: left;
-  width: 15em;
+  width: 47vw;
   user-select: none;
 }
 
 .about span {
-  font-size: 20px;
+  font-size: 21px;
+  hyphens: auto;
   font-family:
     "Saol-Text-Light-Italic",
     serif;
   line-height: 1;
   z-index: 2;
-  animation: fadein 2s;
+  animation: fadein 3s;
   user-select: none;
 }
 
-.pointy-arrow-link {
-  position: absolute;
-  bottom: 1px;
-  left: 2vw;
-  font-size: 20px;
-  color: #e1e1e1;
-  font-family: "IBM-PS2-thin", serif;
+.contacts {
+  display: grid;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
-.pointy-arrow-link span {
-  position: absolute;
-  bottom: 17px;
-  left: 10vh;
-  font-size: 20px;
-  color: #e1e1e1;
-  font-family: "IBM-PS2-thin", serif;
-  animation: wiggle 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-play-state: running;
+a:visited {
+  color: black;
 }
 
-/* animation object */
-canvas[resize] {
+a:hover {
+  color: #ce0af0;
+}
+
+.email:hover {
+  color: #ce0af0;
+}
+
+.about span:hover {
+  cursor: cell;
+  color: #ce0af0;
+}
+
+.foot-5 :hover {
+  color: #ce0af0;
+}
+
+.about-wrapper {
+  overflow: scroll;
+  backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  height: 97vh;
+}
+
+.about-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* footnotes */
+.footnotes {
+  position: absolute;
+  text-align: left;
+  top: 36vh;
+  left: 580px;
+  color: white;
+  font-size: 12px;
+  font-family: "Happy-Times-reg", serif;
+  line-height: 1.3;
+  z-index: 2;
+  animation: fadein 3s;
+  float: right;
+  width: 17em;
+  user-select: none;
+  overflow: scroll;
+  height: auto;
+  backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  height: 100vh;
+  display: none;
+}
+
+.code-by {
+  position: absolute;
+  color: #444342;
+  bottom: -190px;
+  right: 19px;
+  font-size: 14px;
+  font-family:
+  "IBM-PS2-thin", serif;
+  z-index: 2;
+  animation: fadein 3s;
+  user-select: none;
+}
+
+/* projects list  */
+
+.projects-container {
+  position: fixed;
+  background-color: #f0eded;
+  top: 10vh;
+  right: 1vw;
+  width: 48vw;
+  overflow: scroll;
+  backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  height: 89vh;
+  box-shadow: 0px 0px 60px 10px #e4dddd;
+}
+
+.inner-wrap {
+  position: relative;
+  padding: 10px;
+  float: left;
   width: 100%;
-  height: 100%;
+  height: 1%;
+  padding-right: 0px;
 }
 
-/* iphone xr */
-@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+.menu-wrap {
+  width: 100%;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  right: 0px;
+  z-index: 999;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.box {
+  box-sizing: border-box;
+}
+
+select.menu {
+  width: 48vw;
+  cursor: pointer;
+  position: fixed;
+  top: 7%;
+  right: 10px;
+  z-index: 12;
+}
+
+select:not(:-internal-list-box) {
+  overflow: visible !important;
+}
+
+select {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: black;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  -webkit-appearance: menulist;
+  box-sizing: border-box;
+  align-items: center;
+  white-space: pre;
+  -webkit-rtl-ordering: logical;
+  background-color: white;
+  cursor: default;
+  margin: 0em;
+  font: 400 11px system-ui;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a7ff02;
+  border-image: initial;
+  font-family: sans-serif;
+}
+
+optgroup {
+  font-weight: bolder;
+  display: block;
+}
+
+#content {
+  position: relative;
+  padding-right: 5px;
+  padding-left: 5px;
+  min-height: calc(100vh -35px);
+}
+
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  max-height: calc(100vh - 60px);
+  margin-bottom: 5px;
+  display: block;
+}
+
+.content-1 {
+  font-family: sans-serif;
+  float: right;
+}
+/* Responsive */
+
 /* iphone xs */
-  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-/* iphone xs max */
-    @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  /* iphone xs max */
+  @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3);
+}
+
+/* Animations  */
+@keyframes fadein {
+  from {
+    opacity: 0;
   }
 
-  /* Animations  */
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
+  to {
+    opacity: 1;
+  }
+}
 
-    to {
-      opacity: 1;
-    }
+@keyframes wiggle {
+  0% {
+    transform: rotate(10deg);
   }
 
-  @keyframes wiggle {
-    0% {
-      transform: rotate(10deg);
-    }
-
-    25% {
-      transform: rotate(-10deg);
-    }
-
-    50% {
-      transform: rotate(20deg);
-    }
-
-    75% {
-      transform: rotate(-5deg);
-    }
-
-    100% {
-      transform: rotate(0deg);
-    }
+  25% {
+    transform: rotate(-20deg);
   }
 
-  @keyframes side-wave {
-    0% {
-      left: 2vw;
-      top: 50px;
-    }
-
-    25% {
-      left: 5vw;
-      top: 50px;
-    }
+  50% {
+    transform: rotate(30deg);
   }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes side-wave {
+  0% {
+    left: 2vw;
+    top: 50px;
+  }
+
+  25% {
+    left: 5vw;
+    top: 50px;
+  }
+}

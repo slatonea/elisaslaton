@@ -1,59 +1,204 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Elisa Slaton</title>
+  <title>Elisa Slaton</title>
 
   <!-- css -->
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <!-- favion   -->
-    <link rel="icon" type="image/png" href="assets/IlisFlowerIcons-2-icon.png">
+  <link rel="icon" type="image/png" href="assets/IlisFlowerIcons-2-icon.png">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154192325-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154192325-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-154192325-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-
-  </head>
-
-
-  <body>
-
-<!-- clock & date -->
-<div id="displayclock" class="clock" onload="showTime()"></div>
-<p id="date"></p>
-<!-- clock & date -->
+    gtag('config', 'UA-154192325-1');
+  </script>
 
 
-<div class="about"><p> Elisa Slaton is a <span>*web</span> + <span>*graphic designer,</span> <br><br>She is currently freelancing while completing her BA from Virginia Commonwealth University.</p>
-<p><small>Portfolio & CV available upon request.</small></p></div>
+<script src="p5.js"></script>
+<script src="draggydivs.js"></script>
 
-<div class="pointy-arrow-link"><p>
-Contact <span>☏</span></p>
+</head>
+
+
+<body>
+
+  <!-- clock & date -->
+  <div id="displayclock" class="clock" onload="showTime()"></div>
+  <p id="date"></p>
+  <!-- clock & date -->
+<!-- clock bar -->
+<div class="bar"></div>
+<div class="bar-contents">
+  <div id="hi"><p>👋🏾</p></div>
+
+  <div id="index"><p>Index&nbsp;<sub>⤸</sub></p></div>
+
+  <div id="emoji-time"><p>🕖</p></div>
+</div>
+
+  <!-- <about page> -->
+<div class="about-wrapper">
+  <div class="about">
+    <p>ABOUT <sub>⤸</sub><br>Elisa Slaton is a<span>*digital</span><font size="2;"><sup>&nbsp;&nbsp;1</sup></font> + <span>*graphic designer.</span><font size="2;"><sup>&nbsp;2</sup></font>
+      <br><br>Her body of work relies less on recognizable visual patterns as mark-marking, and more on <span>consistent, epigrammatic</span> <font size="2;"><sup>3&nbsp;</sup></font>&nbsp;conceptualizations.
+      <br><br> This notion is illustrated in both the making and its result. She seeks not to possess a distinctive mark but have <font size="2;"><span>recognizable solutions.</span><sup>4&nbsp;&nbsp;</sup></font> Elisa believes design should operate as an armature for content and depart from
+      individual overtness. <br><br>She is currently <font size="2;"><sup>5&nbsp;&nbsp;</sup></font><span>freelancing</span> while completing her BA at Virginia Commonwealth University.</p>
+<br>
+<p>EXHIBITIONS & FAIRS <sub>⤸</sub><br>
+<font size="4">
+2019<br>
+&nbsp;&nbsp;○&nbsp;"When the Whirlwind Begins" The Anderson Gallery
+<br>
+&nbsp;&nbsp;○&nbsp;"Sight, Site, Cite"
+Graphic Design Center
+<br>
+&nbsp;&nbsp;○&nbsp;"As, Not For: Dethroning Our Absolutes" Response Exhibition, The Anderson Gallery
+<br>2018
+<br>&nbsp;&nbsp;○&nbsp;"Cmnd+C Cmnd+V: An Excelstencil Crisis" Exhibition Graphic Design Center
+<br>
+&nbsp;&nbsp;○&nbsp;Annual Student Juried Show, The Anderson Gallery
+<br>2017
+<br>&nbsp;&nbsp;○&nbsp;Open Night, Department of Graphic Design
+<br>
+&nbsp;&nbsp;○&nbsp;Preview Weekend Showcase Department of Graphic Design</font>
+<br>
+<br>
+<p>AWARDS<sub>⤸</sub><br>
+<font size="3">
+&nbsp;&nbsp;○&nbsp;Black History in the Making Award, 2019
+<br>
+&nbsp;&nbsp;○&nbsp;University
+Student Scholar, 2018
+<br>
+&nbsp;&nbsp;○&nbsp;VCUarts Dean's List, 2017, 2018, & 2019
+</font></p>
+<div class="contacts">
+<a class ="email">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:slatonea@gmail.com?"style="text-decoration:none;color: black;">💻slatonea@gmail.com </a>Richmond, VA <br>📞816.223.2565
+<a href="Slaton,Elisa_2020_resume.pdf"><font size="2">
+Download Full CV</font></a>
+</div>
 </div>
 
 
-<!-- animation base -->
+<!-- <about footnotes> -->
 
-<canvas id="myCanvas" resize></canvas>
+<div id="foot-wrapper">
+<div class="footnotes">
+<div class="foot-1">
+<font size="2;"><sup>1</sup></font>&nbsp;Software:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;① HTML<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;② CSS <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③ Javascript<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;④ Illustrator<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑤ Photoshop<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑥ InDesign<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑦ Sketch <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑧ Premiere Pro<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑨ Final Cut Pro
+</div>
+
+<br><br>
+
+<div class="foot-2">
+<font size="2;"><sup>2</sup></font>&nbsp;Interests:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;① Curatorial practice<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;② Archival practice<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③ Exhibition design<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;④ Publication design
+</div>
+
+<br><br><br>
+
+<div class="foot-3">
+<font size="2;"><sup>3</sup></font>&nbsp;See all projects<br><br>
+</div>
+
+<br><br>
+
+<div class="foot-4">
+<font size="2;"><sup>4</sup></font>&nbsp;
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+</div>
+
+<br><br>
+
+<div class="foot-5">
+<font size="2;"><sup>5</sup></font><b>&nbsp;For business inquires:</b>
+<br>
+
+<a class ="email">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:slatonea@gmail.com?"style="text-decoration:none;color: #e1e1e1;">slatonea@gmail.com
+<br>
+</a>
+</div>
+  </div>
+</div></div>
+
+<!-- code by -->
+<div class= "code-by">
+<p>Code by Yours Truly. © 2019</p>
+</div>
+
+
+<!-- projects list -->
+<div class="projects-container">
+<div class="inner-wrap box" style="width:33..33%;">
+
+<div class="menu-wrap box"></div>
+
+<!-- title of section -->
+<select class="menu">
+<optgroup label="Selected Projects"></optgroup>
+
+<!-- might be external page liked -->
+
+<option value="wtwb">	"When the Whirlwind Begins",
+  Exhibition designer, 2019		</option>
+
+<option value="site-cite">
+    "Sight, Site, Cite",
+    Tabled, 2019			</option>
+</select>
+</div>
+
+<!-- entire box -->
+<div  class="content-box-1">
+<!-- entire box -->
+<div class="content-1">
+<img src= "assets/WhentheWhirlwindBeginsWeb-78.jpg"
+class="wtwb"
+alt="wtwb-img"><p>This group exhibition of Philadelphia artists is the culminating gesture of the Applied Curatorial Practices class taught by The Anderson Curator/Director Chase Westfall. The class is made up of six undergraduate VCUarts students who were nominated to participate by their respective departments.
+"When the Whirlwind Begins" offers a thematic survey of some of the most relevant, challenging, and exciting work being made in Philadelphia today. The exhibition explores the energy of transformation that emerges in times of chaos and change. Artists were selected through student research and a series of site and studio visits made in Philadelphia during the Fall semester.</p>
+</div>
+
+<div class="content-2">
+<img src= "assets/Slaton,Elisa_Pins_01.jpg"
+class="sight-site"
+alt="sight-img"><p>Hello this worked too</p>
+</div>
+</div>
+
+
+
+<div  class="content-box-2">
+<!-- entire box -->
+<div class="content-1">
+<img src= "assets/wine-red.jpg"
+class="wine"
+alt="wine-img"><p>Hello this worked too, actually</p>
+</div>
+</div>
+<!-- projects container div -->
+          </div>
 
 
 
 
-
-
-<!-- javascripts -->
-<script src="jquery.min.js"></script>
-<script src="myjava.js"></script>
-  </body>
-
+  <!-- javascripts -->
+  <script src="jquery.min.js"></script>
+  <script src="myjava.js"></script>
+</body>
 </html>
