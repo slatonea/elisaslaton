@@ -89,16 +89,16 @@ html {
 #index {
   position: fixed;
   top: 5px;
-  right: 51vw;
-  left: 51vw;
+  right: 52vw;
+  left: 50vw;
   font-size: 16px;
   font-family: sans-serif;
   z-index: 9;
 }
 
 #emoji-time {
-  position: absolute;
-  top: 8px;
+  position: fixed;
+  top: -12px;
   right: 107px;
   font-size: 16px;
   font-family: sans-serif;
@@ -176,7 +176,7 @@ a:hover {
   backface-visibility: hidden;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
-  height: 102vh;
+  height: 101vh;
 }
 
 .about-wrapper::-webkit-scrollbar {
