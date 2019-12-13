@@ -103,6 +103,7 @@ html {
   font-size: 16px;
   font-family: sans-serif;
   z-index: 9;
+  display: none;
 }
 
 /* background */
@@ -176,7 +177,7 @@ a:hover {
   backface-visibility: hidden;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
-  height: 101vh;
+  height: 103vh;
 }
 
 .about-wrapper::-webkit-scrollbar {
