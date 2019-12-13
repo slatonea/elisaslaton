@@ -177,7 +177,7 @@ a:hover {
   backface-visibility: hidden;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
-  height: 103vh;
+  height: 97vh;
 }
 
 .about-wrapper::-webkit-scrollbar {
