@@ -40,7 +40,9 @@ html {
   right: 1vw;
   color: black;
   font-family: sans-serif;
-  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 18px;
   letter-spacing: 1px;
   cursor: none;
   z-index: 10;
@@ -51,8 +53,10 @@ html {
   top: 1vh;
   right: 1vw;
   color: black;
+  font-weight: 500;
+  text-transform: uppercase;
   font-family: sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 1px;
   cursor: none;
   z-index: 9;
@@ -70,7 +74,10 @@ html {
   font-family: sans-serif;
   z-index: 8;
   font-size: 17px;
-  box-shadow: 0px 0px 60px 5px #e4dddd;
+  border-width: 0px 0em 2px 0; /* top right bottom left */
+border-style: solid dotted inset double;
+border-color: black;
+  /* box-shadow: 0px 0px 60px 5px #ECCDDA; */
 }
 
 #hi {
@@ -88,11 +95,13 @@ html {
 
 #index {
   position: fixed;
-  top: 5px;
-  right: 52vw;
-  left: 50vw;
-  font-size: 16px;
+  top: -10px;
+  right: 54vw;
+  left: 49vw;
+  font-size: 22px;
   font-family: sans-serif;
+  /* font-weight: 600; */
+  text-transform: uppercase;
   z-index: 9;
 }
 
@@ -187,21 +196,22 @@ a:hover {
 .code-by {
   position: absolute;
   color: #444342;
-  bottom: -30px;
-  right: 19px;
+  bottom: -6px;
+  right: 16px;
   font-size: 13px;
   font-family:
   "IBM-PS2-thin", serif;
   z-index: 2;
   animation: fadein 3s;
   user-select: none;
+  z-index: 10;
 }
 
 /* projects list  */
 
 .projects-container {
   position: fixed;
-  background-color: #f0eded;
+  background-color: white;
   top: 6vh;
   right: 1vw;
   width: 48vw;
@@ -210,7 +220,6 @@ a:hover {
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   height: 91vh;
-  box-shadow: 0px 0px 60px 10px #cdc8c8;
 }
 
 .inner-wrap {
@@ -292,7 +301,6 @@ img {
   max-height: 80%;
   margin-bottom: 5px;
   display: flex;
-
 }
 
 .content-box-1 {
