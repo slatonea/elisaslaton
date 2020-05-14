@@ -159,7 +159,9 @@ body {
   font-size: 15px;
   line-height: 1.4;
 }
-
+a {
+  color: black;
+}
 a:visited {
   color: black;
 }
