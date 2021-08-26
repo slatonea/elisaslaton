@@ -72,3 +72,6 @@ $('select').on('change', function(){
     $('body,html').animate({ scrollTop: $('#' + $(this).val()).position().top });
 
 });
+
+
+// Counter for Images
