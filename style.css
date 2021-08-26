@@ -89,15 +89,16 @@ sup {
   top: -1px;
   /* left: 35rem; */
   left: 200px;
-  font-size: 14px;
+  font-size: 12px;
   font-family: sans-serif;
   /* font-weight: 600; */
   text-transform: uppercase;
   z-index: 9;
+  line-height: 2;
 }
 
 .content-box-1 {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 @media  (max-width: 539px) {
@@ -143,12 +144,10 @@ body {
   text-align: left;
   text-justify: inter-word;
   hyphens: auto;
-  top: 3em;
   left: 2vw;
   color: #575756;
-  font-size: 14px;
+  font-size: 12px;
   font-family: sans-serif;
-  line-height: 1.1;
   z-index: 2;
   animation: fadein 3s;
   float: left;
@@ -158,12 +157,12 @@ body {
 
 
 .about span {
-  font-size: 18px;
+  font-size: 14px;
   hyphens: auto;
   font-family:
     "Saol-Text-Light-Italic",
     serif;
-  line-height: 1;
+  /* line-height: 1; */
   z-index: 2;
   animation: fadein 3s;
   user-select: none;
@@ -172,12 +171,13 @@ body {
 .indent {
   text-transform: uppercase;
   text-indent: 2em;
+  font-size: 12px;
 }
 
 .contacts {
   display: grid;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.4;
 }
 
@@ -233,7 +233,7 @@ a:hover {
 .projects-container {
   position: fixed;
   background-color: #f8f8f5;
-  top: 6vh;
+  top: 5.1vh;
   right: 1vw;
   width: 48vw;
   overflow: scroll;
