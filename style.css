@@ -154,7 +154,7 @@ body {
   animation: fadein 3s;
   float: left;
   width: 47vw;
-  top: 4em;
+  top: 5vh;
   /* user-select: none; */
 }
 
