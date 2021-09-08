@@ -101,6 +101,11 @@ sup {
   font-size: 13px;
 }
 
+.update {
+  color: #BFBBB0;
+  font-size: 12px;
+}
+
 @media  (max-width: 539px) {
     #index {
         float: none;
@@ -152,6 +157,7 @@ body {
   animation: fadein 3s;
   float: left;
   width: 47vw;
+  top: 4em;
   user-select: none;
 }
 
@@ -186,6 +192,8 @@ body {
   grid-auto-rows: min-content;
   grid-gap: 1.3em;
 } */
+
+
 
 .clients {
 line-height: .4em;
