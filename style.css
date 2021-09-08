@@ -97,9 +97,6 @@ sup {
   line-height: 2;
 }
 
-.content-box-1 {
-  font-size: 13px;
-}
 
 .update {
   color: #BFBBB0;
@@ -157,8 +154,15 @@ body {
   animation: fadein 3s;
   float: left;
   width: 47vw;
-  top: 4em;
-  user-select: none;
+  top: 5em;
+  /* user-select: none; */
+}
+
+::selection {
+  /* Change highlight background color to black */
+  background: rgba(0, 0, 0, 0);
+  /* Change highlight text color to red */
+  color: #ff60A3;
 }
 
 
