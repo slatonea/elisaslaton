@@ -15,16 +15,15 @@ function showTime() {
     session = "PM";
   }
 
-  h = (h < 10) ? "0" + h : h;
-  m = (m < 10) ? "0" + m : m;
-  s = (s < 10) ? "0" + s : s;
+  h = h < 10 ? "0" + h : h;
+  m = m < 10 ? "0" + m : m;
+  s = s < 10 ? "0" + s : s;
 
   var time = h + ":" + m + ":" + s + " " + session;
   document.getElementById("displayclock").innerText = time;
   document.getElementById("displayclock").textContent = time;
 
   setTimeout(showTime, 1000);
-
 }
 
 // Date Real-time
@@ -37,7 +36,7 @@ d = n.getDate();
 document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
 
 var degrees = 0;
-$(".circle").click(function() {
+$(".circle").click(function () {
   degrees += 90;
   $(this).css("transform", "rotate(" + degrees + "deg)");
 });
@@ -46,8 +45,7 @@ $(".circle").click(function() {
 
 // google analytics
 
-
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
   var deviceAgent = navigator.userAgent.toLowerCase();
   if (deviceAgent.match(/(iphone|ipod|ipad)/)) {
     $("html").addClass("ios");
@@ -59,7 +57,10 @@ jQuery(document).ready(function($) {
     $("html").addClass("chrome");
   } else if (navigator.userAgent.search("Firefox") >= 0) {
     $("html").addClass("firefox");
-  } else if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+  } else if (
+    navigator.userAgent.search("Safari") >= 0 &&
+    navigator.userAgent.search("Chrome") < 0
+  ) {
     $("html").addClass("safari");
   } else if (navigator.userAgent.search("Opera") >= 0) {
     $("html").addClass("opera");
@@ -68,11 +69,9 @@ jQuery(document).ready(function($) {
 
 // Selector
 
-$('select').on('change', function(){
-    $('body,html').animate({ scrollTop: $('#' + $(this).val()).position().top });
-
+$("select").on("change", function () {
+  $("body,html").animate({ scrollTop: $("#" + $(this).val()).position().top });
 });
-
 
 // // Counter for Images
 // $(window).scroll(function () {
