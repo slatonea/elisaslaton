@@ -38,7 +38,7 @@ html {
   position: fixed;
   top: 1vh;
   right: 1vw;
-  color: #fffdf8;
+  color: #a5a5a49d;
   font-family: sans-serif;
   font-weight: 500;
   text-transform: uppercase;
@@ -52,7 +52,7 @@ html {
   position: fixed;
   top: 1vh;
   right: 1vw;
-  color: #ff60a3;
+  color: #a5a5a49d;
   font-weight: 500;
   text-transform: uppercase;
   font-family: sans-serif;
@@ -69,19 +69,19 @@ html {
   left: 0px;
   width: 100%;
   height: 50px;
-  background-color: #000;
+  background-color: #f8f8f5;
   color: #575756;
   font-family: sans-serif;
   z-index: 8;
   font-size: 17px;
   border-width: 0px 0em 0.5px 0; /* top right bottom left */
   border-style: solid dotted inset double;
-  border-color: #fffdf8;
+  border-color: #d3d3d3f6;
   /* box-shadow: 0px 0px 60px 5px #ECCDDA; */
 }
 
 sup {
-  color: #ff60a3;
+  color: #a5a5a49d;
 }
 
 #index {
@@ -98,7 +98,7 @@ sup {
 }
 
 .update {
-  color: #fffdf8;
+  color: #9b9b9b9d;
   font-size: 12px;
 }
 
@@ -133,7 +133,7 @@ sup {
 
 /* background */
 body {
-  background-color: #000;
+  background-color: #f8f8f5;
   overflow: hidden;
   color: #bfbbb0;
 }
@@ -146,7 +146,7 @@ body {
   text-justify: inter-word;
   hyphens: auto;
   left: 2vw;
-  color: #fffdf8;
+  color: #575756;
   font-size: 12px;
   font-family: sans-serif;
   z-index: 2;
@@ -195,30 +195,30 @@ body {
 
 .clients {
   line-height: 0.4em;
-  color: #ff60a3;
+  color: #575756;
 }
 a {
-  color: #fffdf8;
+  color: #575756;
 }
 a:visited {
-  color: #fffdf8;
+  color: #575756;
 }
 
 a:hover {
-  color: #ff60a3;
+  color: #d8d8d69d;
 }
 
 .email:hover {
-  color: #ff60a3;
+  color: #d8d8d69d;
 }
 
 .about span:hover {
   cursor: cell;
-  color: #ff60a3;
+  color: #d8d8d69d;
 }
 
 .foot-5 :hover {
-  color: #ff60a3;
+  color: #d8d8d69d;
 }
 
 #about-wrapper {
@@ -237,7 +237,7 @@ a:hover {
 
 .projects-container {
   position: fixed;
-  background-color: #000;
+  background-color: #f8f8f5;
   top: 5.1vh;
   right: 1vw;
   width: 48vw;
