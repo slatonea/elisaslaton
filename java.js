@@ -23,6 +23,8 @@ setInterval(function () {
 }, 800);
 
 
+
+
 // //<![CDATA[
 // var rate = 5;
 // if (document.getElementById)
